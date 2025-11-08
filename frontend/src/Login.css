@@ -1,0 +1,67 @@
+/* Center the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6b73ff, #000dff);
+  font-family: 'Arial', sans-serif;
+}
+
+/* Form card */
+.login-form {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-5px);
+}
+
+.login-form h2 {
+  margin-bottom: 25px;
+  color: #333;
+  letter-spacing: 1px;
+}
+
+/* Input fields */
+.login-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.login-form input:focus {
+  border-color: #6b73ff;
+  box-shadow: 0 0 5px rgba(107, 115, 255, 0.3);
+}
+
+/* Button */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #6b73ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.login-form button:hover {
+  background-color: #000dff;
+  transform: translateY(-2px);
+}

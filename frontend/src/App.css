@@ -1,0 +1,138 @@
+/* src/App.css */
+
+/* Body and App container */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.App {
+  background-color: #fff;
+  margin-top: 60px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  width: 450px;
+  max-width: 95%;
+  transition: transform 0.3s ease;
+}
+
+.App:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.App h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Input and Add Button */
+.App div input[type="text"] {
+  width: calc(100% - 100px);
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.App div input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+.App div button {
+  padding: 12px 20px;
+  margin-left: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.App div button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Todo List */
+.App ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+/* Individual todo item */
+.App li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background-color 0.2s ease;
+}
+
+.App li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Completed task styling */
+.App li span {
+  flex: 1;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.App li span:hover {
+  color: #007bff;
+}
+
+.App li span.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+/* Delete Button */
+.App li button {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.App li button:hover {
+  background-color: #a71d2a;
+  transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .App {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .App div input[type="text"] {
+    width: calc(100% - 90px);
+  }
+}
