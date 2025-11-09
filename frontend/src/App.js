@@ -12,8 +12,8 @@ function Login({ onLogin }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (email && password) {
-      onLogin({ email, password }); // set user in App
-      navigate("/todos"); // redirect to ToDo page
+      onLogin({ email, password });
+      navigate("/todos");
     } else {
       alert("Please fill in all fields");
     }
@@ -22,6 +22,7 @@ function Login({ onLogin }) {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
+        <h1>SmartToDo</h1>
         <h2>Login</h2>
         <input
           type="email"
@@ -92,7 +93,7 @@ function TodoPage() {
 
   return (
     <div className="App">
-      <h1>My ToDo App</h1>
+      <h1>SmartToDo</h1>
       <div style={{ display: "flex", marginBottom: "20px" }}>
         <input
           type="text"
